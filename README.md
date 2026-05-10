@@ -1,29 +1,28 @@
-# 悦见｜女性AI成长社群 品牌启动包网页
+# 悦见｜女性AI成长社群（GitHub Pages 静态版）
 
-## 运行方式
+本项目已调整为**纯静态网页结构**，无需 React、Vite、npm build 或任何开发服务器。
 
-```bash
-npm install
-npm run dev
-```
+## 页面结构
 
-默认地址：`http://localhost:5173`
+- `index.html` 首页
+- `brand.html` 品牌介绍
+- `posters.html` 招募海报
+- `long-intro.html` 社群介绍长图
+- `welcome.html` 欢迎页（移动端 H5 风格）
+- `styles.css` 全局样式
+- `script.js` 轻量交互与动效
 
-## 页面路径
+## 本地预览方式
 
-- 首页宣传落地页：`/`
-- 品牌介绍页：`/brand`
-- 招募海报（3张）：`/posters`
-- 社群介绍长图：`/long-intro`
-- 欢迎页 H5：`/welcome`
+直接双击任意 `.html` 文件即可在浏览器打开。
 
-## 二维码替换说明
+## GitHub Pages 设置建议
 
-当前二维码区域为 CSS 占位框（无图片文件）。
-你可以在 `src/App.jsx` 中搜索“二维码占位｜后期替换”，将该区块替换为真实二维码组件或 SVG。
+1. 打开仓库 `Settings` → `Pages`
+2. `Build and deployment` 里选择：
+   - **Source**: `Deploy from a branch`
+   - **Branch**: `main`
+   - **Folder**: `/ (root)`
+3. 保存后等待部署完成。
 
-## 项目说明
-
-- 使用 React + Vite + Tailwind CSS 实现。
-- 所有视觉元素由 HTML/CSS/渐变/卡片构建，无新增图片或二进制文件。
-- 文案集中在 `src/content.js`（导航、品牌基础字段）并在页面中使用。
+部署成功后，仓库地址将直接打开 `index.html` 首页。
